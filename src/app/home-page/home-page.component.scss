@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 77% 23%;
-  padding: 0 70px;
+  padding: 0 80px;
   .left{
     display: grid;
     justify-content: center;
@@ -64,7 +64,6 @@
             scroll-behavior: smooth;
             box-shadow: 0 1.5rem 3rem -0.75 hsla(0,0,0, 0.25%);
             border-radius: 0.5rem;
-            height: 450px;
             .slider img{
               flex: 1 0 100%;
               scroll-snap-align: start;
@@ -176,6 +175,18 @@
         margin-top: 50px;
       }
 
+  }
+}
+@media(max-width: 1123px) {
+  .container {
+    padding: 0 30px;
+    .left{
+      .info{
+        p{
+          font-size: 15px;
+        }
+      }
+    }
   }
 }
 @media(max-width: 930px){
