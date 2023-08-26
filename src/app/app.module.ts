@@ -7,6 +7,9 @@ import { UtilitiesComponent } from './utilities/utilities.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './utilities/navbar/navbar.component';
 import { FooterComponent } from './utilities/footer/footer.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { NavigationBarComponent } from './utilities/navigation-bar/navigation-bar.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +17,9 @@ import { FooterComponent } from './utilities/footer/footer.component';
     UtilitiesComponent,
     HomePageComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    TestimonialsComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
