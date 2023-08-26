@@ -1,0 +1,134 @@
+.container {
+  padding: 0 70px;
+}
+.logo h1{
+  font-weight: bold;
+  color: orange;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+nav .mainMenu li:nth-child(5) a {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 170px;
+  color: white;
+  margin-left: 50px;
+}
+
+nav .mainMenu li a:hover {
+  color: black;
+  background: orange;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+
+.fa-twitter:hover {
+  color: rgb(86, 154, 243);
+}
+
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+
+.fa-github:hover {
+  color: rgb(255, 123, 0);
+}
+
+nav .logo {
+  margin: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media(max-width: 1194px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: top 1s ease 0s;
+    display: none;
+    color: white;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a {
+    color: white;
+  }
+
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+
+  //
+    nav .mainMenu li:nth-child(5) a {
+      margin-left: 0;
+    }
+}
