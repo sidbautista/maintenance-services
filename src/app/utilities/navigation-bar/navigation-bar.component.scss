@@ -1,5 +1,5 @@
 .container {
-  padding: 0 70px;
+  padding: 0 80px;
 }
 .logo h1{
   font-weight: bold;
@@ -34,6 +34,9 @@ nav .mainMenu li:nth-child(5) a {
   width: 170px;
   color: white;
   margin-left: 50px;
+  background: linear-gradient(to right, orange 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right;
 }
 
 nav .mainMenu li a:hover {
