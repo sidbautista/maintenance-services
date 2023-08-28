@@ -7,8 +7,9 @@ import { UtilitiesComponent } from './utilities/utilities.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './utilities/navbar/navbar.component';
 import { FooterComponent } from './utilities/footer/footer.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { NavigationBarComponent } from './utilities/navigation-bar/navigation-bar.component';
+import { AboutComponent } from './about/about.component';
+import { SliderComponent } from './slider/slider.component';
 
 
 @NgModule({
@@ -18,8 +19,9 @@ import { NavigationBarComponent } from './utilities/navigation-bar/navigation-ba
     HomePageComponent,
     NavbarComponent,
     FooterComponent,
-    TestimonialsComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    AboutComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,
