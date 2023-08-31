@@ -1,0 +1,111 @@
+
+.container{
+  padding: 60px 80px;
+  .our-services{
+    display: grid;
+    text-align: center;
+    margin-bottom: 20px;
+    p{
+      color: gray;
+      font-weight: bold;
+      font-size: 15px;
+      margin-bottom: 15px
+    }
+    h2{
+      font-size: 35px;
+      color: orange;
+    }
+  }
+  swiper-container {
+      height: 70vh;
+      padding-top: 50px;
+      swiper-slide {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+
+        .service-box {
+          display: grid;
+          grid-template-rows: 45% 55%;
+          width: 80%;
+          border: 1px solid #e8e9ec;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+
+          .description {
+            display: grid;
+            grid-template-rows: 20% 45% 35%;
+            text-align: center;
+            padding: 0 10px;
+            align-items: center;
+            .header {
+              margin: 25px 0 0;
+              font-size: 23px;
+              font-weight: bold;
+            }
+
+            .body {
+              color: gray;
+            }
+
+            .learn-more {
+              button {
+                height: 50px;
+                width: 140px;
+                transition: transform 0.4s ease 0s;
+                background-color: white;
+              }
+
+              a {
+                font-weight: bold;
+                font-size: 12px;
+                text-decoration: none;
+                color: black;
+              }
+
+              button:hover {
+                border: 0;
+                background-color: orange;
+                transform: translateY(-3px)
+              }
+            }
+          }
+        }
+      }
+    }
+
+    swiper-container::part(button-prev) {
+      color: orange;
+    }
+
+    swiper-container::part(button-next) {
+      color: orange;
+    }
+}
+
+@media(max-width: 1194px) {
+  .container {
+    padding: 0px 30px;
+  }
+}
+@media(max-width: 350px) {
+  .container {
+    swiper-container{
+      swiper-slide{
+        .service-box {
+          .description {
+            .header {
+              margin: 0;
+              font-size: 17px;
+            }
+            .body{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
