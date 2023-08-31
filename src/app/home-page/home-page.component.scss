@@ -230,3 +230,14 @@
     }
   }
 }
+@media(max-width: 355px) {
+  .container {
+    .right {
+      .slider-wrapper {
+        .slider {
+          height: 200px;
+        }
+      }
+    }
+  }
+}

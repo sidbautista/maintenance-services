@@ -15,8 +15,6 @@
     border-radius: 12px;
     margin-right: 10px;
     transform: transform 0.02s ease;
-
-    .box-info {
       padding: 20px 20px 0 20px;
       text-align: center;
       box-shadow: 5px 5px 15px 5px rgb(0, 0, 0, 0.3);
@@ -55,7 +53,7 @@
       }
     }
   }
-}
+
 
 .box:hover {
   transform: translateY(-10px)
@@ -64,6 +62,7 @@
 @media(max-width: 1194px) {
     .container-info {
       flex-wrap: wrap;
+      padding: 0 30px;
     }
 }
 
@@ -80,3 +79,11 @@
   }
 }
 
+@media(max-width: 524px) {
+  .container-info{
+    .box{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
