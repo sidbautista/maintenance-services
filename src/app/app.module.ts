@@ -15,6 +15,7 @@ import { VonzServicesComponent } from './vonz-services/vonz-services.component';
 
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
+import { ContactsComponent } from './contacts/contacts.component';
 // register Swiper custom elements
 register();
 
@@ -29,6 +30,7 @@ register();
     AboutComponent,
     SliderComponent,
     VonzServicesComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,99 @@
+.container {
+  padding: 60px 80px;
+  height: 92%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  .description{
+    h1{
+      font-size: 55px;
+      // color: orange;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 20px;
+      color: gray;
+      margin-bottom: 20px;
+    }
+    .message-me{
+      height: 60px;
+      width: 200px;
+      a{
+        text-decoration: none;
+        button {
+          height: 60px;
+          width: 200px;
+          display: grid;
+          grid-template-columns: 30% 70%;
+          align-items: center;
+          background-color: white;
+          transition: transform 0.4s ease 0s;
+          border: 1px solid gray;
+          border-radius: 15px;
+          .message {
+            display: grid;
+            justify-self: flex-start;
+            font-size: 20px;
+          }
+          i {
+            color: blueviolet;
+            font-size: 30px;
+          }
+        }
+        button:hover{
+          background-color: orange;
+          transform: translateY(-3px);
+          border: 2px solid orangesas;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .contacts{
+    justify-self: center;
+    height: 100%;
+    width: 80%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 30px 30px;
+
+    .header{
+      margin-bottom: 25px;
+      color: orange;
+      font-size: 25px;
+    }
+    .name, .number , .email, .appliances, .text-area{
+      margin-top: 25px;
+      height: 40px;
+      font-size: 20px;
+      width: 100%;
+      padding:10px;
+      border-radius: 7px;
+      background: transparent;
+      border: 1px solid gray;
+      &:hover {
+          /* Use & to refer to the parent selector */
+          border: 2px solid orange;
+        }
+      &:focus {
+          /* Use & to refer to the parent selector */
+        border: 2px solid orange;
+      }
+    }
+    .text-area{
+      height: 150px;
+    }
+    .send{
+      height: 50px;
+      width: 100%;
+      margin-top: 25px;
+      font-weight: bold;
+      font-size: 15px;
+      border: 1px solid orange;
+      background-color: orange;
+      color: white;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+  }
+}
